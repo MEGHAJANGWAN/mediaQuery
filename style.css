@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #111827;;
+    margin: auto;
+    color: white;
+}
+img:hover{
+    cursor: pointer;
+}
+/* -----------------------------------------header----------------------------------------- */
+header{
+    flex-direction: row;
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 600px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+ul li{
+    list-style: none;
+}
+/* ============================================main section================================ */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+/* ========================================intro section======================================= */
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+h3{
+    color: rgb(190, 190, 70);
+}
+p{
+    font-weight: 600;
+    text-align: center;
+}
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.horizontal-divider{
+    height: 2px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* =======================================footer========================================= */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.socialMediaIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    padding-bottom: 50px;
+}
+.hambrger {
+    display: none;
+}
+
+/* ============================================media query======================================= */
+@media screen and (max-width: 576px) {
+.hambrger{
+    display: block;
+    margin-left: -215px;
+}
+nav ul{
+    display: none;
+}
+    
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects{
+    width:30% ;
+}
+}
+
